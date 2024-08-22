@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputs {
+  display: flex;
+  column-gap: 0.625rem;
+}
+
+.inputs .btn {
+  padding: 0.3125rem 0.625rem;
+  text-align: center;
+  background-color: #4ebdf5;
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.inputs input {
+  border-radius: 0.4rem;
+}
+
+.container {
+  margin-top: 1.25rem;
+  width: 25rem;
+  padding: 2.25rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-align: center;
+  background-color: rgb(227, 244, 254);
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.climate {
+  font-size: 1.875rem;
+}
+
+@media (min-width: 0px) {
+  .container {
+    width: 95%;
+  }
+  .tempracher {
+    font-size: 3.875rem;
+  }
+}
+@media (min-width: 480px) {
+  .container {
+    width: 25rem;
+  }
+  .tempracher {
+    font-size: 4.875rem;
+  }
 }
